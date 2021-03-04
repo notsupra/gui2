@@ -1,0 +1,821 @@
+-- TM GUI V2 - MADE BY SOCK TAN
+
+-- Objects
+
+local TwistedMurdererGUIBySockTan = Instance.new("ScreenGui")
+local TMGui = Instance.new("Frame")
+local DragBar = Instance.new("Frame")
+local Credits = Instance.new("TextLabel")
+local CloseB = Instance.new("TextButton")
+local LocalPlayer = Instance.new("TextButton")
+local Players = Instance.new("TextButton")
+local ServerCMDS = Instance.new("Frame")
+local PlayerName = Instance.new("TextBox")
+local MusicID = Instance.new("TextBox")
+local Value = Instance.new("TextBox")
+local Kill = Instance.new("TextButton")
+local KillAll = Instance.new("TextButton")
+local KillOthers = Instance.new("TextButton")
+local Music = Instance.new("TextButton")
+local MusicAll = Instance.new("TextButton")
+local Cloak = Instance.new("TextButton")
+local UnCloak = Instance.new("TextButton")
+local CloakAll = Instance.new("TextButton")
+local UnCloakAll = Instance.new("TextButton")
+local UnMusic = Instance.new("TextButton")
+local UnMusicAll = Instance.new("TextButton")
+local TakeHealth = Instance.new("TextButton")
+local LoopKill = Instance.new("TextButton")
+local DetectRoles = Instance.new("TextButton")
+local CrashLagServer = Instance.new("TextButton")
+local CrashInfo = Instance.new("TextLabel")
+local RemoveRadios = Instance.new("TextButton")
+local RadioInfo = Instance.new("TextLabel")
+local BringAll = Instance.new("TextButton")
+local Bring = Instance.new("TextButton")
+local BringInfo = Instance.new("TextLabel")
+local Glitch = Instance.new("TextButton")
+local Goto = Instance.new("TextButton")
+local LOGO = Instance.new("TextLabel")
+local LocalPlayerCMDS = Instance.new("Frame")
+local SetWS = Instance.new("TextButton")
+local Walkspeed = Instance.new("TextBox")
+local ToolName = Instance.new("TextBox")
+local SaveTool = Instance.new("TextButton")
+local DAntiCheat = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local TPMVP = Instance.new("TextButton")
+local Creds = Instance.new("TextLabel")
+local Open = Instance.new("Frame")
+local OpenB = Instance.new("TextButton")
+
+-- Properties
+
+TwistedMurdererGUIBySockTan.Name = "TwistedMurdererGUIBySockTan"
+TwistedMurdererGUIBySockTan.Parent = game.CoreGui
+
+TMGui.Name = "TMGui"
+TMGui.Parent = TwistedMurdererGUIBySockTan
+TMGui.Active = true
+TMGui.BackgroundColor3 = Color3.new(0, 0, 0)
+TMGui.BackgroundTransparency = 0.30000001192093
+TMGui.BorderColor3 = Color3.new(1, 1, 1)
+TMGui.Draggable = true
+TMGui.Position = UDim2.new(0.0175864156, 0, 0.0543478243, 0)
+TMGui.Size = UDim2.new(0.19102487, 0, 0.461352646, 0)
+TMGui.Visible = false
+
+DragBar.Name = "Drag Bar"
+DragBar.Parent = TMGui
+DragBar.Active = true
+DragBar.BackgroundColor3 = Color3.new(0.105882, 0.105882, 0.105882)
+DragBar.BackgroundTransparency = 0.5
+DragBar.BorderColor3 = Color3.new(1, 1, 1)
+DragBar.Position = UDim2.new(0.000698411139, 0, -0.00114659837, 0)
+DragBar.Size = UDim2.new(0.998602748, 0, 0.0811518356, 0)
+
+Credits.Name = "Credits"
+Credits.Parent = DragBar
+Credits.BackgroundColor3 = Color3.new(0, 0, 0)
+Credits.BackgroundTransparency = 1
+Credits.Position = UDim2.new(0.0158730168, 0, 0.193548381, 0)
+Credits.Size = UDim2.new(0.965079367, 0, 0.645161271, 0)
+Credits.Font = Enum.Font.SourceSans
+Credits.FontSize = Enum.FontSize.Size18
+Credits.Text = "Twisted Murderer FE GUI V2 - By Sock Tan"
+Credits.TextColor3 = Color3.new(1, 1, 1)
+Credits.TextSize = 18
+
+CloseB.Name = "CloseB"
+CloseB.Parent = DragBar
+CloseB.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+CloseB.BackgroundTransparency = 1
+CloseB.BorderColor3 = Color3.new(0, 0, 0)
+CloseB.Position = UDim2.new(0.920634925, 0, 0.129032254, 0)
+CloseB.Size = UDim2.new(0.0666666701, 0, 0.709677398, 0)
+CloseB.Font = Enum.Font.SourceSans
+CloseB.FontSize = Enum.FontSize.Size28
+CloseB.Text = "X"
+CloseB.TextColor3 = Color3.new(1, 0, 0)
+CloseB.TextSize = 28
+
+LocalPlayer.Name = "LocalPlayer"
+LocalPlayer.Parent = TMGui
+LocalPlayer.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+LocalPlayer.BorderColor3 = Color3.new(0, 0, 0)
+LocalPlayer.Position = UDim2.new(0.614047706, 0, 0.0900052413, 0)
+LocalPlayer.Size = UDim2.new(0.374603182, 0, 0.0602094233, 0)
+LocalPlayer.Font = Enum.Font.SourceSans
+LocalPlayer.FontSize = Enum.FontSize.Size14
+LocalPlayer.Text = "LocalPlayer"
+LocalPlayer.TextColor3 = Color3.new(1, 1, 1)
+LocalPlayer.TextSize = 14
+
+Players.Name = "Players"
+Players.Parent = TMGui
+Players.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+Players.BorderColor3 = Color3.new(0, 0, 0)
+Players.Position = UDim2.new(0.0113492068, 0, 0.0880052373, 0)
+Players.Size = UDim2.new(0.374603182, 0, 0.0602094233, 0)
+Players.Font = Enum.Font.SourceSans
+Players.FontSize = Enum.FontSize.Size14
+Players.Text = "Server Commands"
+Players.TextColor3 = Color3.new(1, 1, 1)
+Players.TextSize = 14
+
+ServerCMDS.Name = "ServerCMDS"
+ServerCMDS.Parent = TMGui
+ServerCMDS.Active = true
+ServerCMDS.BackgroundColor3 = Color3.new(0.0862745, 0.0862745, 0.0862745)
+ServerCMDS.BackgroundTransparency = 0.60000002384186
+ServerCMDS.BorderColor3 = Color3.new(1, 1, 1)
+ServerCMDS.Position = UDim2.new(0.0126984129, 0, 0.159685865, 0)
+ServerCMDS.Size = UDim2.new(0.974603176, 0, 0.829842925, 0)
+
+PlayerName.Name = "PlayerName"
+PlayerName.Parent = ServerCMDS
+PlayerName.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+PlayerName.BorderColor3 = Color3.new(1, 1, 1)
+PlayerName.Position = UDim2.new(0.0117719872, 0, 0.0126182968, 0)
+PlayerName.Size = UDim2.new(0.374592841, 0, 0.0630914792, 0)
+PlayerName.Font = Enum.Font.SourceSans
+PlayerName.FontSize = Enum.FontSize.Size14
+PlayerName.Text = "Player Name"
+PlayerName.TextColor3 = Color3.new(1, 1, 1)
+PlayerName.TextSize = 14
+PlayerName.TextWrapped = true
+
+MusicID.Name = "MusicID"
+MusicID.Parent = ServerCMDS
+MusicID.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+MusicID.BorderColor3 = Color3.new(0.760784, 0.760784, 0.760784)
+MusicID.Position = UDim2.new(0.0130293155, 0, 0.0927917883, 0)
+MusicID.Size = UDim2.new(0.374592841, 0, 0.0630914792, 0)
+MusicID.Font = Enum.Font.SourceSans
+MusicID.FontSize = Enum.FontSize.Size14
+MusicID.Text = "Music ID"
+MusicID.TextColor3 = Color3.new(1, 1, 1)
+MusicID.TextSize = 14
+MusicID.TextWrapped = true
+
+Value.Name = "Value"
+Value.Parent = ServerCMDS
+Value.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+Value.BorderColor3 = Color3.new(0.529412, 0.529412, 0.529412)
+Value.Position = UDim2.new(0.0142866448, 0, 0.171501577, 0)
+Value.Size = UDim2.new(0.374592841, 0, 0.0630914792, 0)
+Value.Font = Enum.Font.SourceSans
+Value.FontSize = Enum.FontSize.Size14
+Value.Text = "Value"
+Value.TextColor3 = Color3.new(1, 1, 1)
+Value.TextSize = 14
+Value.TextWrapped = true
+
+Kill.Name = "Kill"
+Kill.Parent = ServerCMDS
+Kill.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Kill.BorderColor3 = Color3.new(0, 0, 0)
+Kill.Position = UDim2.new(0.0145439729, 0, 0.254520506, 0)
+Kill.Size = UDim2.new(0.174999997, 0, 0.063000001, 0)
+Kill.Font = Enum.Font.SourceSans
+Kill.FontSize = Enum.FontSize.Size14
+Kill.Text = "Kill Plr"
+Kill.TextColor3 = Color3.new(1, 1, 1)
+Kill.TextSize = 14
+
+KillAll.Name = "KillAll"
+KillAll.Parent = ServerCMDS
+KillAll.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+KillAll.BorderColor3 = Color3.new(0, 0, 0)
+KillAll.Position = UDim2.new(0.203211725, 0, 0.254056722, 0)
+KillAll.Size = UDim2.new(0.174999997, 0, 0.063000001, 0)
+KillAll.Font = Enum.Font.SourceSans
+KillAll.FontSize = Enum.FontSize.Size14
+KillAll.Text = "Kill All"
+KillAll.TextColor3 = Color3.new(1, 1, 1)
+KillAll.TextSize = 14
+
+KillOthers.Name = "KillOthers"
+KillOthers.Parent = ServerCMDS
+KillOthers.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+KillOthers.BorderColor3 = Color3.new(0, 0, 0)
+KillOthers.Position = UDim2.new(0.390879482, 0, 0.255520493, 0)
+KillOthers.Size = UDim2.new(0.185000017, 0, 0.064000003, 0)
+KillOthers.Font = Enum.Font.SourceSans
+KillOthers.FontSize = Enum.FontSize.Size14
+KillOthers.Text = "Kill Others"
+KillOthers.TextColor3 = Color3.new(1, 1, 1)
+KillOthers.TextSize = 14
+
+Music.Name = "Music"
+Music.Parent = ServerCMDS
+Music.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Music.BorderColor3 = Color3.new(0, 0, 0)
+Music.Position = UDim2.new(0.0130293155, 0, 0.332539499, 0)
+Music.Size = UDim2.new(0.215000257, 0, 0.063000001, 0)
+Music.Font = Enum.Font.SourceSans
+Music.FontSize = Enum.FontSize.Size14
+Music.Text = "Music Plr"
+Music.TextColor3 = Color3.new(1, 1, 1)
+Music.TextSize = 14
+
+MusicAll.Name = "MusicAll"
+MusicAll.Parent = ServerCMDS
+MusicAll.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+MusicAll.BorderColor3 = Color3.new(0, 0, 0)
+MusicAll.Position = UDim2.new(0.469827473, 0, 0.331230283, 0)
+MusicAll.Size = UDim2.new(0.215000257, 0, 0.063000001, 0)
+MusicAll.Font = Enum.Font.SourceSans
+MusicAll.FontSize = Enum.FontSize.Size14
+MusicAll.Text = "Music All"
+MusicAll.TextColor3 = Color3.new(1, 1, 1)
+MusicAll.TextSize = 14
+
+Cloak.Name = "Cloak"
+Cloak.Parent = ServerCMDS
+Cloak.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Cloak.BorderColor3 = Color3.new(0, 0, 0)
+Cloak.Position = UDim2.new(0.0130586289, 0, 0.408094674, 0)
+Cloak.Size = UDim2.new(0.174999997, 0, 0.063000001, 0)
+Cloak.Font = Enum.Font.SourceSans
+Cloak.FontSize = Enum.FontSize.Size14
+Cloak.Text = "Cloak"
+Cloak.TextColor3 = Color3.new(1, 1, 1)
+Cloak.TextSize = 14
+
+UnCloak.Name = "UnCloak"
+UnCloak.Parent = ServerCMDS
+UnCloak.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+UnCloak.BorderColor3 = Color3.new(0, 0, 0)
+UnCloak.Position = UDim2.new(0.203469038, 0, 0.405940086, 0)
+UnCloak.Size = UDim2.new(0.174999997, 0, 0.063000001, 0)
+UnCloak.Font = Enum.Font.SourceSans
+UnCloak.FontSize = Enum.FontSize.Size14
+UnCloak.Text = "UnCloak"
+UnCloak.TextColor3 = Color3.new(1, 1, 1)
+UnCloak.TextSize = 14
+
+CloakAll.Name = "CloakAll"
+CloakAll.Parent = ServerCMDS
+CloakAll.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+CloakAll.BorderColor3 = Color3.new(0, 0, 0)
+CloakAll.Position = UDim2.new(0.392136842, 0, 0.406940073, 0)
+CloakAll.Size = UDim2.new(0.174999997, 0, 0.063000001, 0)
+CloakAll.Font = Enum.Font.SourceSans
+CloakAll.FontSize = Enum.FontSize.Size14
+CloakAll.Text = "Cloak All"
+CloakAll.TextColor3 = Color3.new(1, 1, 1)
+CloakAll.TextSize = 14
+
+UnCloakAll.Name = "UnCloakAll"
+UnCloakAll.Parent = ServerCMDS
+UnCloakAll.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+UnCloakAll.BorderColor3 = Color3.new(0, 0, 0)
+UnCloakAll.Position = UDim2.new(0.581091404, 0, 0.408785433, 0)
+UnCloakAll.Size = UDim2.new(0.213000074, 0, 0.063000001, 0)
+UnCloakAll.Font = Enum.Font.SourceSans
+UnCloakAll.FontSize = Enum.FontSize.Size14
+UnCloakAll.Text = "UnCloak All"
+UnCloakAll.TextColor3 = Color3.new(1, 1, 1)
+UnCloakAll.TextSize = 14
+
+UnMusic.Name = "UnMusic"
+UnMusic.Parent = ServerCMDS
+UnMusic.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+UnMusic.BorderColor3 = Color3.new(0, 0, 0)
+UnMusic.Position = UDim2.new(0.242556989, 0, 0.330075681, 0)
+UnMusic.Size = UDim2.new(0.215000257, 0, 0.063000001, 0)
+UnMusic.Font = Enum.Font.SourceSans
+UnMusic.FontSize = Enum.FontSize.Size14
+UnMusic.Text = "UnMusic Plr"
+UnMusic.TextColor3 = Color3.new(1, 1, 1)
+UnMusic.TextSize = 14
+
+UnMusicAll.Name = "UnMusicAll"
+UnMusicAll.Parent = ServerCMDS
+UnMusicAll.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+UnMusicAll.BorderColor3 = Color3.new(0, 0, 0)
+UnMusicAll.Position = UDim2.new(0.698583126, 0, 0.330230296, 0)
+UnMusicAll.Size = UDim2.new(0.215000257, 0, 0.063000001, 0)
+UnMusicAll.Font = Enum.Font.SourceSans
+UnMusicAll.FontSize = Enum.FontSize.Size14
+UnMusicAll.Text = "UnMusic All"
+UnMusicAll.TextColor3 = Color3.new(1, 1, 1)
+UnMusicAll.TextSize = 14
+
+TakeHealth.Name = "TakeHealth"
+TakeHealth.Parent = ServerCMDS
+TakeHealth.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+TakeHealth.BorderColor3 = Color3.new(0, 0, 0)
+TakeHealth.Position = UDim2.new(0.402166188, 0, 0.172501594, 0)
+TakeHealth.Size = UDim2.new(0.275000006, 0, 0.063000001, 0)
+TakeHealth.Font = Enum.Font.SourceSans
+TakeHealth.FontSize = Enum.FontSize.Size14
+TakeHealth.Text = "Damage Plr"
+TakeHealth.TextColor3 = Color3.new(1, 1, 1)
+TakeHealth.TextSize = 14
+
+LoopKill.Name = "LoopKill"
+LoopKill.Parent = ServerCMDS
+LoopKill.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+LoopKill.BorderColor3 = Color3.new(0, 0, 0)
+LoopKill.Position = UDim2.new(0.590150237, 0, 0.254365891, 0)
+LoopKill.Size = UDim2.new(0.215000078, 0, 0.063000001, 0)
+LoopKill.Font = Enum.Font.SourceSans
+LoopKill.FontSize = Enum.FontSize.Size14
+LoopKill.Text = "LoopKill Plr"
+LoopKill.TextColor3 = Color3.new(1, 1, 1)
+LoopKill.TextSize = 14
+
+DetectRoles.Name = "DetectRoles"
+DetectRoles.Parent = ServerCMDS
+DetectRoles.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+DetectRoles.BorderColor3 = Color3.new(0, 0, 0)
+DetectRoles.Position = UDim2.new(0.0142866448, 0, 0.483495206, 0)
+DetectRoles.Size = UDim2.new(0.215000257, 0, 0.063000001, 0)
+DetectRoles.Font = Enum.Font.SourceSans
+DetectRoles.FontSize = Enum.FontSize.Size14
+DetectRoles.Text = "Detect Roles"
+DetectRoles.TextColor3 = Color3.new(1, 1, 1)
+DetectRoles.TextSize = 14
+
+CrashLagServer.Name = "CrashLagServer"
+CrashLagServer.Parent = ServerCMDS
+CrashLagServer.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+CrashLagServer.BorderColor3 = Color3.new(0, 0, 0)
+CrashLagServer.Position = UDim2.new(0.0117719872, 0, 0.559514225, 0)
+CrashLagServer.Size = UDim2.new(0.30499962, 0, 0.063000001, 0)
+CrashLagServer.Font = Enum.Font.SourceSans
+CrashLagServer.FontSize = Enum.FontSize.Size14
+CrashLagServer.Text = "Crash/Lag Server"
+CrashLagServer.TextColor3 = Color3.new(1, 1, 1)
+CrashLagServer.TextSize = 14
+
+CrashInfo.Name = "CrashInfo"
+CrashInfo.Parent = ServerCMDS
+CrashInfo.BackgroundColor3 = Color3.new(0, 0, 0)
+CrashInfo.BackgroundTransparency = 1
+CrashInfo.Position = UDim2.new(0.335504889, 0, 0.56782335, 0)
+CrashInfo.Size = UDim2.new(0.534408331, 0, 0.0378548913, 0)
+CrashInfo.Font = Enum.Font.SourceSans
+CrashInfo.FontSize = Enum.FontSize.Size14
+CrashInfo.Text = "<-- Spam heaps to lag the server"
+CrashInfo.TextColor3 = Color3.new(1, 1, 1)
+CrashInfo.TextSize = 14
+
+RemoveRadios.Name = "RemoveRadios"
+RemoveRadios.Parent = ServerCMDS
+RemoveRadios.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+RemoveRadios.BorderColor3 = Color3.new(0, 0, 0)
+RemoveRadios.Position = UDim2.new(0.0140586291, 0, 0.632533252, 0)
+RemoveRadios.Size = UDim2.new(0.428998023, 0, 0.063000001, 0)
+RemoveRadios.Font = Enum.Font.SourceSans
+RemoveRadios.FontSize = Enum.FontSize.Size14
+RemoveRadios.Text = "Remove Everyones Radio"
+RemoveRadios.TextColor3 = Color3.new(1, 1, 1)
+RemoveRadios.TextSize = 14
+
+RadioInfo.Name = "RadioInfo"
+RadioInfo.Parent = ServerCMDS
+RadioInfo.BackgroundColor3 = Color3.new(0, 0, 0)
+RadioInfo.BackgroundTransparency = 1
+RadioInfo.Position = UDim2.new(0.454996586, 0, 0.645533085, 0)
+RadioInfo.Size = UDim2.new(0.394410133, 0, 0.0378548913, 0)
+RadioInfo.Font = Enum.Font.SourceSans
+RadioInfo.FontSize = Enum.FontSize.Size14
+RadioInfo.Text = "<-- Cannot be undone"
+RadioInfo.TextColor3 = Color3.new(1, 1, 1)
+RadioInfo.TextSize = 14
+
+BringAll.Name = "BringAll"
+BringAll.Parent = ServerCMDS
+BringAll.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+BringAll.BorderColor3 = Color3.new(0, 0, 0)
+BringAll.Position = UDim2.new(0.203286871, 0, 0.709160745, 0)
+BringAll.Size = UDim2.new(0.174999997, 0, 0.063000001, 0)
+BringAll.Font = Enum.Font.SourceSans
+BringAll.FontSize = Enum.FontSize.Size14
+BringAll.Text = "Bring All"
+BringAll.TextColor3 = Color3.new(1, 1, 1)
+BringAll.TextSize = 14
+
+Bring.Name = "Bring"
+Bring.Parent = ServerCMDS
+Bring.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Bring.BorderColor3 = Color3.new(0, 0, 0)
+Bring.Position = UDim2.new(0.0142866448, 0, 0.709779203, 0)
+Bring.Size = UDim2.new(0.174999997, 0, 0.063000001, 0)
+Bring.Font = Enum.Font.SourceSans
+Bring.FontSize = Enum.FontSize.Size14
+Bring.Text = "Bring Plr"
+Bring.TextColor3 = Color3.new(1, 1, 1)
+Bring.TextSize = 14
+
+BringInfo.Name = "BringInfo"
+BringInfo.Parent = ServerCMDS
+BringInfo.BackgroundColor3 = Color3.new(0, 0, 0)
+BringInfo.BackgroundTransparency = 1
+BringInfo.Position = UDim2.new(0.581877053, 0, 0.72108829, 0)
+BringInfo.Size = UDim2.new(0.179411843, 0, 0.0378548913, 0)
+BringInfo.Font = Enum.Font.SourceSans
+BringInfo.FontSize = Enum.FontSize.Size14
+BringInfo.Text = "<-- Buggy"
+BringInfo.TextColor3 = Color3.new(1, 1, 1)
+BringInfo.TextSize = 14
+
+Glitch.Name = "Glitch"
+Glitch.Parent = ServerCMDS
+Glitch.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Glitch.BorderColor3 = Color3.new(0, 0, 0)
+Glitch.Position = UDim2.new(0.0138013009, 0, 0.786643565, 0)
+Glitch.Size = UDim2.new(0.295999557, 0, 0.063000001, 0)
+Glitch.Font = Enum.Font.SourceSans
+Glitch.FontSize = Enum.FontSize.Size14
+Glitch.Text = "Annoy/Glitch All"
+Glitch.TextColor3 = Color3.new(1, 1, 1)
+Glitch.TextSize = 14
+
+Goto.Name = "Goto"
+Goto.Parent = ServerCMDS
+Goto.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Goto.BorderColor3 = Color3.new(0, 0, 0)
+Goto.Position = UDim2.new(0.389285177, 0, 0.709160745, 0)
+Goto.Size = UDim2.new(0.174999997, 0, 0.063000001, 0)
+Goto.Font = Enum.Font.SourceSans
+Goto.FontSize = Enum.FontSize.Size14
+Goto.Text = "Goto Plr"
+Goto.TextColor3 = Color3.new(1, 1, 1)
+Goto.TextSize = 14
+
+LOGO.Name = "LOGO"
+LOGO.Parent = TMGui
+LOGO.BackgroundColor3 = Color3.new(1, 1, 1)
+LOGO.BackgroundTransparency = 1
+LOGO.Position = UDim2.new(0.427396804, 0, 0.0936230421, 0)
+LOGO.Size = UDim2.new(0.139682546, 0, 0.0523560196, 0)
+LOGO.Font = Enum.Font.Fantasy
+LOGO.FontSize = Enum.FontSize.Size28
+LOGO.Text = "TM"
+LOGO.TextColor3 = Color3.new(1, 1, 1)
+LOGO.TextSize = 25
+
+LocalPlayerCMDS.Name = "LocalPlayerCMDS"
+LocalPlayerCMDS.Parent = TMGui
+LocalPlayerCMDS.BackgroundColor3 = Color3.new(0.0862745, 0.0862745, 0.0862745)
+LocalPlayerCMDS.BackgroundTransparency = 0.60000002384186
+LocalPlayerCMDS.BorderColor3 = Color3.new(1, 1, 1)
+LocalPlayerCMDS.Position = UDim2.new(0.0130000003, 0, 0.159999996, 0)
+LocalPlayerCMDS.Size = UDim2.new(0.975000024, 0, 0.829999983, 0)
+LocalPlayerCMDS.Visible = false
+
+SetWS.Name = "SetWS"
+SetWS.Parent = LocalPlayerCMDS
+SetWS.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+SetWS.BorderColor3 = Color3.new(0, 0, 0)
+SetWS.Position = UDim2.new(0.400908828, 0, 0.0127728693, 0)
+SetWS.Size = UDim2.new(0.174999997, 0, 0.063000001, 0)
+SetWS.Font = Enum.Font.SourceSans
+SetWS.FontSize = Enum.FontSize.Size14
+SetWS.Text = "Set WS"
+SetWS.TextColor3 = Color3.new(1, 1, 1)
+SetWS.TextSize = 14
+
+Walkspeed.Name = "Walkspeed"
+Walkspeed.Parent = LocalPlayerCMDS
+Walkspeed.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+Walkspeed.BorderColor3 = Color3.new(0, 0, 0)
+Walkspeed.Position = UDim2.new(0.0112866443, 0, 0.0137728695, 0)
+Walkspeed.Size = UDim2.new(0.372592866, 0, 0.0630914792, 0)
+Walkspeed.Font = Enum.Font.SourceSans
+Walkspeed.FontSize = Enum.FontSize.Size14
+Walkspeed.Text = "Walk Speed"
+Walkspeed.TextColor3 = Color3.new(1, 1, 1)
+Walkspeed.TextSize = 14
+Walkspeed.TextWrapped = true
+
+ToolName.Name = "ToolName"
+ToolName.Parent = LocalPlayerCMDS
+ToolName.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+ToolName.BorderColor3 = Color3.new(0, 0, 0)
+ToolName.Position = UDim2.new(0.0130293155, 0, 0.0914826468, 0)
+ToolName.Size = UDim2.new(0.374592841, 0, 0.0630914792, 0)
+ToolName.Font = Enum.Font.SourceSans
+ToolName.FontSize = Enum.FontSize.Size14
+ToolName.Text = "Tool Name"
+ToolName.TextColor3 = Color3.new(1, 1, 1)
+ToolName.TextSize = 14
+ToolName.TextWrapped = true
+
+SaveTool.Name = "SaveTool"
+SaveTool.Parent = LocalPlayerCMDS
+SaveTool.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+SaveTool.BorderColor3 = Color3.new(0, 0, 0)
+SaveTool.Position = UDim2.new(0.399394125, 0, 0.0901735127, 0)
+SaveTool.Size = UDim2.new(0.174999997, 0, 0.063000001, 0)
+SaveTool.Font = Enum.Font.SourceSans
+SaveTool.FontSize = Enum.FontSize.Size14
+SaveTool.Text = "SaveTool"
+SaveTool.TextColor3 = Color3.new(1, 1, 1)
+SaveTool.TextSize = 14
+
+DAntiCheat.Name = "DAntiCheat"
+DAntiCheat.Parent = LocalPlayerCMDS
+DAntiCheat.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+DAntiCheat.BorderColor3 = Color3.new(0, 0, 0)
+DAntiCheat.Position = UDim2.new(0.0138013009, 0, 0.169347003, 0)
+DAntiCheat.Size = UDim2.new(0.327999145, 0, 0.063000001, 0)
+DAntiCheat.Font = Enum.Font.SourceSans
+DAntiCheat.FontSize = Enum.FontSize.Size14
+DAntiCheat.Text = "Disable Anti-Cheat"
+DAntiCheat.TextColor3 = Color3.new(1, 1, 1)
+DAntiCheat.TextSize = 14
+
+TextLabel.Parent = LocalPlayerCMDS
+TextLabel.BackgroundColor3 = Color3.new(0, 0, 0)
+TextLabel.BackgroundTransparency = 1
+TextLabel.Position = UDim2.new(0.1791531, 0, 0.520504713, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.FontSize = Enum.FontSize.Size14
+TextLabel.Text = "MORE COMMANDS COMING SOON!"
+TextLabel.TextColor3 = Color3.new(0.584314, 0.584314, 0.584314)
+TextLabel.TextSize = 14
+
+TPMVP.Name = "TPMVP"
+TPMVP.Parent = LocalPlayerCMDS
+TPMVP.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+TPMVP.BorderColor3 = Color3.new(0, 0, 0)
+TPMVP.Position = UDim2.new(0.0138013009, 0, 0.246347159, 0)
+TPMVP.Size = UDim2.new(0.327999145, 0, 0.063000001, 0)
+TPMVP.Font = Enum.Font.SourceSans
+TPMVP.FontSize = Enum.FontSize.Size14
+TPMVP.Text = "Teleport Into Mvp"
+TPMVP.TextColor3 = Color3.new(1, 1, 1)
+TPMVP.TextSize = 14
+
+Creds.Name = "Creds"
+Creds.Parent = TMGui
+Creds.BackgroundColor3 = Color3.new(0, 0, 0)
+Creds.BackgroundTransparency = 1
+Creds.Position = UDim2.new(0.0133819468, 0, 0.944408357, 0)
+Creds.Size = UDim2.new(0.973090947, 0, 0.0445026197, 0)
+Creds.Font = Enum.Font.SourceSans
+Creds.FontSize = Enum.FontSize.Size14
+Creds.Text = "Big thanks to Jobey for Ui tips and Command ideas!"
+Creds.TextColor3 = Color3.new(1, 1, 1)
+Creds.TextSize = 14
+
+Open.Name = "Open"
+Open.Parent = TwistedMurdererGUIBySockTan
+Open.BackgroundColor3 = Color3.new(0.0431373, 0.0431373, 0.0431373)
+Open.BackgroundTransparency = 0.30000001192093
+Open.BorderColor3 = Color3.new(1, 1, 1)
+Open.Position = UDim2.new(-0.000393571914, 0, 0.00120772945, 0)
+Open.Size = UDim2.new(0.0521528199, 0, 0.0350241549, 0)
+
+OpenB.Name = "OpenB"
+OpenB.Parent = Open
+OpenB.BackgroundColor3 = Color3.new(0.141176, 0.141176, 0.141176)
+OpenB.BackgroundTransparency = 1
+OpenB.Position = UDim2.new(0.022224538, 0, 0.103263155, 0)
+OpenB.Size = UDim2.new(0.96236676, 0, 0.842105269, 0)
+OpenB.Font = Enum.Font.SourceSans
+OpenB.FontSize = Enum.FontSize.Size14
+OpenB.Text = "Open GUI"
+OpenB.TextColor3 = Color3.new(1, 1, 1)
+OpenB.TextSize = 14
+
+
+OpenB.MouseButton1Down:connect(function()
+	game.CoreGui.TwistedMurdererGUIBySockTan.Open.Visible = false
+	game.CoreGui.TwistedMurdererGUIBySockTan.TMGui.Visible = true
+end)
+
+CloseB.MouseButton1Down:connect(function()
+	game.CoreGui.TwistedMurdererGUIBySockTan.Open.Visible = true
+	game.CoreGui.TwistedMurdererGUIBySockTan.TMGui.Visible = false
+end)
+
+Players.MouseButton1Down:connect(function()
+	game.CoreGui.TwistedMurdererGUIBySockTan.TMGui.ServerCMDS.Visible = true
+	game.CoreGui.TwistedMurdererGUIBySockTan.TMGui.LocalPlayerCMDS.Visible = false
+end)
+
+LocalPlayer.MouseButton1Down:connect(function()
+	game.CoreGui.TwistedMurdererGUIBySockTan.TMGui.ServerCMDS.Visible = false
+	game.CoreGui.TwistedMurdererGUIBySockTan.TMGui.LocalPlayerCMDS.Visible = true
+end)
+
+Kill.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.Event:FireServer("TPD", 2000, game.Workspace.Ignore.Players[PlayerName.Text].Humanoid)
+end)
+
+KillAll.MouseButton1Down:connect(function()
+	for i,v in pairs(game.Players:GetChildren()) do
+	game.ReplicatedStorage.Event:FireServer("TPD", 2000, game.Workspace.Ignore.Players[v.Name].Humanoid)
+	end
+end)
+
+KillOthers.MouseButton1Down:connect(function()
+	for i,v in pairs(game.Players:GetChildren()) do
+	game.ReplicatedStorage.Event:FireServer("TPD", -100, game.Workspace.Ignore.Players[PlayerName.Text].Humanoid)
+	game.ReplicatedStorage.Event:FireServer("TPD", 100, game.Workspace.Ignore.Players[v.Name].Humanoid)
+	game.ReplicatedStorage.Event:FireServer("TPD", -100, game.Workspace.Ignore.Players[PlayerName.Text].Humanoid)
+	game.ReplicatedStorage.Event:FireServer("TPD", 100, game.Workspace.Ignore.Players[v.Name].Humanoid)
+	end
+end)
+
+LoopKill.MouseButton1Down:connect(function()
+	while true do
+	wait(1.5)
+	game.ReplicatedStorage.Event:FireServer("TPD", 2000, game.Workspace.Ignore.Players[PlayerName.Text].Humanoid)
+	end
+end)
+
+Cloak.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.Event:FireServer("Cloak", game.Workspace.Ignore.Players[PlayerName.Text])
+end)
+
+UnCloak.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.Event:FireServer("UnCloak", game.Workspace.Ignore.Players[PlayerName.Text])
+end)
+
+CloakAll.MouseButton1Down:connect(function()
+	for i,v in pairs(game.Players:GetChildren()) do
+	game.ReplicatedStorage.Event:FireServer("Cloak", game.Workspace.Ignore.Players[v.Name])
+	end
+end)
+
+UnCloakAll.MouseButton1Down:connect(function()
+	for i,v in pairs(game.Players:GetChildren()) do
+	game.ReplicatedStorage.Event:FireServer("UnCloak", game.Workspace.Ignore.Players[v.Name])
+	end
+end)
+
+Music.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.Event:FireServer("PlayRadio", game.Players[PlayerName.Text], MusicID.Text)
+end)
+
+MusicAll.MouseButton1Down:connect(function()
+	for i,v in pairs(game.Players:GetChildren()) do
+	game.ReplicatedStorage.Event:FireServer("PlayRadio", v, MusicID.Text)
+	end
+end)
+
+UnMusicAll.MouseButton1Down:connect(function()
+	for i,v in pairs(game.Players:GetChildren()) do
+	game.ReplicatedStorage.Event:FireServer("StopRadio", v)
+	end
+end)
+
+UnMusic.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.Event:FireServer("StopRadio", game.Players[PlayerName.Text])
+end)
+
+SaveTool.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Backpack[ToolName.Text].Parent = game.Players.LocalPlayer.StarterGear
+end)
+
+SetWS.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Walkspeed.Text
+end)
+
+TakeHealth.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.Event:FireServer("TPD", Value.Text, game.Workspace.Ignore.Players[PlayerName.Text].Humanoid)
+end)
+
+CrashLagServer.MouseButton1Down:connect(function()
+	while true do
+	wait()
+	for i,v in pairs(game.Players:GetChildren()) do
+	game.ReplicatedStorage.Event:FireServer("PlayRadio", v, 491150071)
+	end
+	end
+end)
+
+RemoveRadios.MouseButton1Down:connect(function()
+	while true do
+	wait(1.2)
+	for i,v in pairs(game.Players:GetChildren()) do
+	game.ReplicatedStorage.Event:FireServer("StopRadio", v)
+	end
+	end
+end)
+
+Bring.MouseButton1Down:connect(function()
+	plr = game.Players.PlayerName.Text
+	lpChar = game.Players.LocalPlayer.Character.Torso
+
+	lpChar.Anchored = true
+	local w = Instance.new("Weld", lpChar)
+	w.Part0 = lpChar
+	w.Part1 = plr.Character.Torso
+	w.C0 = lpChar.CFrame
+	w.C1 = lpChar.CFrame
+	wait(0.1)
+	w:Destroy()
+	lpChar.Anchored = false
+end)
+
+BringAll.MouseButton1Down:connect(function()
+	for i,plr in pairs (game.Players:GetChildren()) do
+	if plr.Name ~= game.Players.LocalPlayer.Name then
+	lpChar = game.Players.LocalPlayer.Character.Torso
+  
+	lpChar.Anchored = true
+	local w = Instance.new("Weld", lpChar)
+	w.Part0 = lpChar
+	w.Part1 = plr.Character.Torso
+	w.C0 = lpChar.CFrame
+	w.C1 = lpChar.CFrame
+	wait(0.1)
+	w:Destroy()
+	lpChar.Anchored = false
+	end
+	end
+end)
+
+Glitch.MouseButton1Down:connect(function()
+	lpChar = game.Players.LocalPlayer.Character.Torso
+
+for i,plr in pairs (game.Players:GetChildren()) do
+ if plr.Name ~= game.Players.LocalPlayer.Name then
+  for i,v in pairs (game.Players.LocalPlayer.Character:GetChildren()) do
+   if v.ClassName == 'Part' then
+      if v.Name ~= 'Head' then
+        v.Anchored = true
+     end
+   end
+  end
+  local w = Instance.new("Weld", lpChar)
+  w.Part0 = lpChar
+  w.Part1 = plr.Character.Torso
+  w.C0 = lpChar.CFrame
+  w.C1 = lpChar.CFrame * CFrame.new(0, 99999999, 0)
+  wait(0.1)
+  w:Destroy()
+  for i,v in pairs (game.Players.LocalPlayer.Character:GetChildren()) do
+   if v.ClassName == 'Part' then
+      if v.Name ~= 'Head' then
+        v.Anchored = false
+     end
+   end
+  end
+ end
+end
+
+
+end)
+
+Goto.MouseButton1Down:connect(function()
+	local plr = game.Players.LocalPlayer
+	lpChar = game.Players[PlayerName.Text].Character.Torso
+
+	lpChar.Anchored = true
+	local w = Instance.new("Weld", lpChar)
+	w.Part0 = lpChar
+	w.Part1 = plr.Character.Torso
+	w.C0 = lpChar.CFrame
+	w.C1 = lpChar.CFrame
+	wait(.1)
+	w:Destroy()
+	lpChar.Anchored = false
+end)
+
+DAntiCheat.MouseButton1Down:connect(function()
+	antiKek={'AntiSpeedHack','AntiDataTheft','UI','NO FF','NO FF'}
+
+	while wait() do
+	local Player = game.Players.LocalPlayer
+	local Gui = Player.PlayerGui
+	for i,v in pairs(antiKek) do
+	if Gui:FindFirstChild(v) then
+	Gui:FindFirstChild(v):Remove()
+	end
+	end
+	end
+end)
+
+DetectRoles.MouseButton1Down:connect(function()
+	while wait(1) do
+	for i,v in pairs(game.Players:GetChildren()) do
+	if game.Players[v.Name].Character:FindFirstChild("Role") then
+	local role = game.Players[v.Name].Character:FindFirstChild("Role")
+	if role.Value == "Murderer" then
+	game.CoreGui.RobloxGui.PlayerListContainer.ScrollList[v.Name].BGFrame.PlayerName.TextColor3 = Color3.new(1, 0, 0)
+	elseif role.Value == "Sheriff" then
+	game.CoreGui.RobloxGui.PlayerListContainer.ScrollList[v.Name].BGFrame.PlayerName.TextColor3 = Color3.new(1, 170/255, 0)
+	elseif role.Value == "Innocent" then
+	game.CoreGui.RobloxGui.PlayerListContainer.ScrollList[v.Name].BGFrame.PlayerName.TextColor3 = Color3.new(0, 1, 0)
+	else
+	game.CoreGui.RobloxGui.PlayerListContainer.ScrollList[v.Name].BGFrame.PlayerName.TextColor3 = Color3.new(1, 1, 1)
+	end
+	end
+	end
+	end
+end)
+
+TPMVP.MouseButton1Down:connect(function()
+	PlayerName = game.Players.LocalPlayer.Name
+	game.Workspace.Ignore.Players[PlayerName].HumanoidRootPart.CFrame = CFrame.new(7, 29, -10)
+end)
